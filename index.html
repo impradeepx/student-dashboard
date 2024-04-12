@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Student Dashboard</h1>
+        <div class="filters">
+            <h2>Filters</h2>
+            <label for="grade">Grade:</label>
+            <select id="grade">
+                <option value="all">All</option>
+                <option value="1">Grade 1</option>
+                <option value="2">Grade 2</option>
+                <option value="3">Grade 3</option>
+            </select>
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="all">All</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+            <button onclick="applyFilters()">Apply Filters</button>
+        </div>
+        <div class="tools">
+            <h2>Tools</h2>
+            <button onclick="exportData()">Export Data</button>
+            <button onclick="resetFilters()">Reset Filters</button>
+        </div>
+        <div class="student-list" id="student-list">
+            <!-- Student data will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
